@@ -1,2 +1,2 @@
 # quote-generator
-fun little project
+little fun project 

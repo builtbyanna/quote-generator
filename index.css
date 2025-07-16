@@ -1,0 +1,20 @@
+body {
+  font-family: fantasy;
+  color: brown;
+  background: beige;
+  margin: 40px;
+}
+
+#btn1 {
+  background-color: brown;
+  color: antiquewhite;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 12px;
+  font-size: larger;
+}
+
+#quote-el {
+  transition: opacity 0, 5s ease-in-out;
+  opacity: 1;
+}
