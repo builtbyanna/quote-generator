@@ -14,19 +14,19 @@ let quotes = [
 
 let colors = ["brown", "darkgreen", "indigo", "teal"];
 
-function generate() {
-  quote.style.opacity = 0;
+function generate() { //what happens when you click the button
+  quote.style.opacity = 0; //old text disappears
 
-  setTimeout(function () {
+  setTimeout(function () { //what happens inside the timeout
     let randomQuote = Math.floor(Math.random() * quotes.length);
     if (quotes.length > 0) {
       quote.textContent = quotes[randomQuote];
     } else {
-      quote.textContent = "no quotes";
+      quote.textContent = "no quotes"; //optional to don´t break the function if array is empty
     }
-    quote.style.opacity = 1;
-  }, 300);
+    quote.style.opacity = 1; //text appears 
+  }, 300); //duration of timeout
 
-  let randomColor = Math.floor(Math.random() * colors.length);
+  let randomColor = Math.floor(Math.random() * colors.length); //chooses random color
   quote.style.color = colors[randomColor];
 }
